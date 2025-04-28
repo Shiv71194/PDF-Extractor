@@ -1,0 +1,8 @@
+fitz
+reportlab.lib.pagesizes
+reportlab.pdfgen
+reportlab.lib.utils
+reportlab.platypus
+reportlab.lib
+random
+re
