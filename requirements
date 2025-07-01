@@ -6,3 +6,5 @@ reportlab.platypus
 reportlab.lib
 random
 re
+streamlit
+pandas
