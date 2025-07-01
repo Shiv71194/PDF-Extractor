@@ -8,3 +8,5 @@ random
 re
 streamlit
 pandas
+pymupdf
+reportlab
