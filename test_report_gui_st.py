@@ -162,7 +162,7 @@ if uploaded_pdf:
         clean_product_name = re.sub(r"^\d+\.\s*", "", extracted_data["Products"][0]["Product Name"])
         invoice_suffix = extracted_data["Invoice No"][-3:]
         report_path = f"test_report{clean_product_name}{invoice_suffix}.pdf"
-        logo_path = "C:/Users/sunil/Downloads/WhatsApp Image 2025-03-19 at 12.34.13 PM.jpeg"  # Replace with actual logo path
+        logo_path = "logo.jpeg"  # Replace with actual logo path
         generate_test_report(extracted_data, logo_path, report_path)
         
         with open(report_path, "rb") as f:
