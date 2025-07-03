@@ -23,7 +23,7 @@ def extract_pdf_data(pdf_file):
         text = "\n".join([page.get_text("text") for page in doc])
         lines = [line.strip() for line in text.split("\n") if line.strip()]
         for i, line in enumerate(lines):
-            if "Shipped to  :" in line:
+            f "Shipped to :" in line or "Shipped to  :" in line:
                 extracted_data["Company Name"] = lines[i + 1]
             if "Invoice No." in line:
                 extracted_data["Invoice No"] = lines[i+1].split(":")[-1].strip()
