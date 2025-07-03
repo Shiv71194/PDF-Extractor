@@ -70,7 +70,7 @@ def generate_test_report(order_details, logo_path, output_path):
     # Generate Randomized Values
     random_copper_value = round(random.uniform(24.70, 24.75), 2)
     random_ph_value = round(random.uniform(3.0, 3.4), 1)
-    batch = re.search(r"batch no:\s*(\d+)",order_details["Products"][0]["Batch No"] )
+    batch = re.search(r"batch\s+nos?:?\s*(\d+)",order_details["Products"][0]["Batch No"] )
     clean_product_name = re.sub(r"^\d+\.\s*", "", order_details["Products"][0]["Product Name"])
     if not order_details["Order No"]:
         OR_NO = "VERBAL"
